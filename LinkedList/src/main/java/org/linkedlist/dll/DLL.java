@@ -1,5 +1,7 @@
 package org.linkedlist.dll;
 
+import org.linkedlist.sll.SLLNode;
+
 public class DLL {
     private DLLNode first, last;
 
@@ -33,6 +35,23 @@ public class DLL {
 //        it will delete by the garbage collection
         deleteBackwards(del, del.pred);
         deleteBackwards(del, del.succ);
+    }
+
+    /**
+     * This method find the target element in the list if it contains
+     * it will return that node otherwise it returns the null
+     * it implements the linear search
+     *
+     * @param target
+     * @return
+     */
+    public DLLNode search(Object target) {
+        for (DLLNode cur = first; cur != null; cur = cur.succ) {
+            if (target.equals(cur.element)) {
+                return cur;
+            }
+        }
+        return null;
     }
 
 //    auxiliary methods

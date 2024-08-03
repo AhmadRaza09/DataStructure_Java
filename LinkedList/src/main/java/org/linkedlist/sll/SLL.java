@@ -46,4 +46,21 @@ public class SLL {
             pred.succ = succ;
         }
     }
+
+    /**
+     * This method find the target element in the list if it contains
+     * it will return that node otherwise it returns the null
+     * it implements the linear search
+     *
+     * @param target
+     * @return
+     */
+    public SLLNode search(Object target) {
+        for (SLLNode cur = first; cur != null; cur = cur.succ) {
+            if (target.equals(cur.element)) {
+                return cur;
+            }
+        }
+        return null;
+    }
 }
