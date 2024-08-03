@@ -26,4 +26,24 @@ public class SLL {
             pred.succ = ins;
         }
     }
+
+    /**
+     * This method delete the provided node from the linked list
+     *
+     * @param del
+     */
+    public void delete(SLLNode del) {
+        SLLNode succ = del.succ;
+
+        if (first == del) {
+            first = succ;
+        } else {
+            SLLNode pred = first;
+
+            while (pred.succ != del) {
+                pred = pred.succ;
+            }
+            pred.succ = succ;
+        }
+    }
 }
