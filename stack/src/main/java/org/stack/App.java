@@ -1,9 +1,4 @@
-package org.linkedlist;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Spliterator;
+package org.stack;
 
 /**
  * Hello world!
