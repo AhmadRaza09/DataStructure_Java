@@ -4,7 +4,7 @@ public interface Queue {
     /**
      * This method check the queue is element contains in the queue or not
      *
-     * @return boolean true if element contains otherwise return false
+     * @return boolean false if element contains otherwise return true
      */
     public boolean isEmpty();
 
